@@ -15,3 +15,13 @@ updates:
         patterns:
           - "*"
     open-pull-requests-limit: 10
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/frontend" # Location of package manifests
+    schedule:
+      interval: "daily"
+      time: "14:20"
+    groups:
+      npmPackages:
+        patterns:
+          - "*"
+    open-pull-requests-limit: 10
