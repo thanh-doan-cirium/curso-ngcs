@@ -9,7 +9,7 @@ updates:
     directory: "/backed/" # Location of package manifests
     schedule:
       interval: "daily"
-      time: "14:05"
+      time: "14:10"
     groups:
       csharpNuget:
         patterns:
