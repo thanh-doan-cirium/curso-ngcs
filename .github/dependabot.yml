@@ -5,6 +5,7 @@
 
 version: 2
 updates:
+
   - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/backed" # Location of package manifests
     schedule:
@@ -15,6 +16,7 @@ updates:
         patterns:
           - "*"
     open-pull-requests-limit: 10
+    
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/frontend" # Location of package manifests
     schedule:
