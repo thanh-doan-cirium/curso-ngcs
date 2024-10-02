@@ -1,0 +1,12 @@
+name: GitHub Task List Checker
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+jobs:
+  task-list-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for incomplete task list items
+        uses: thanh-doan-cirium/curso-ngcs@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
